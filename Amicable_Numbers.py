@@ -1,16 +1,15 @@
 A=int(input())
 B=int(input())
-s=0
-c=0
+S=0
+D=0
 for i in range(1,A):
     if A%i==0:
-        s+=i
-for i in range(1,B):
-    if B%i==0:
-        c+=i
-if s==B:
-    print("Amicable")
-elif c==A:
+        S+=i
+for j in range(1,B):
+    if B%j==0:
+        D+=j
+if A==D and B==S:
     print("Amicable")
 else:
     print("Not Amicable")
+        
